@@ -1,0 +1,5 @@
+# من جذر المشروع:
+robocopy ".next\static" ".next\standalone\.next\static" /MIR /NFL /NDL
+if (Test-Path "public") {
+  robocopy "public" ".next\standalone\public" /MIR /NFL /NDL
+}
